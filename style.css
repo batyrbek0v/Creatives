@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 10px 5%;
+    position: absolute;
+    border-bottom: 1px solid white;
+    box-shadow: 0 5px 10px lightgreen;
+    transition: 1s;
+}
+.back:hover{
+    box-shadow: 0 5px 10px white;
+}
+
+img{
+    width: 70px;
+    height:60px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+
+.list li{
+    margin: 0 20px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.7s;
+    
+}
+.list li:hover:before{
+    content: '';
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 -1px 5px white;
+}
+.list li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    transition: 0.5s;
+    text-shadow: 0 0 5px black;
+}
+
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px;
+}
+.icons li a{
+    color: white;
+}
+.sign{
+    text-shadow: 0 0 5px white;
+}
+.banner{
+    background: url(https://wallpapercave.com/wp/wp8268703.jpg) center / cover;
+    width: 100%;
+    height: 100vh;
+}
+.content h1{
+    margin: 0;
+    padding-top: 250px;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0 0 5px black;
+}
+.content p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size:35px;
+    color:white;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+   
+}
+.card{
+    background: url(https://www.technewstoday.com/wp-content/uploads/2020/05/aesthetic-desktop-1024x576.jpg) center/ cover;
+    width: 100%;
+    height: 50vh;
+    transition: 0.8s;
+}
+.card:hover{
+    background: url("http://cdn.home-designing.com/wp-content/uploads/2020/11/beautiful-speakers.jpg") center / cover;
+}
+
+.card2{
+    width: 100%;
+    padding-top: 80px;
+    background:rgba(0, 0, 0,0.8);
+    color: white;
+    position: relative;
+}
+.card2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    background-color: black;
+}
+.card2:hover:before{
+    font-family: fantasy;
+    content: 'NEVER SAY NEVER!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transform: rotateX(360deg);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background:black;
+}
+.card2 h1{ 
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: left;
+    
+}
+.card2 ul{
+    width: 80%;
+    list-style: none;
+    text-align: left;
+}
+.card3{
+    width: 100%;
+    padding-top: 80px;
+    background:white;
+    position: relative;
+    color:rgba(0, 0, 0,0.9);
+}
+.card3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform: rotatey(180deg);
+}
+.card3:hover:before{
+    font-family: fantasy;
+    content: 'NEVER GIVE UP!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transform:rotatey(360deg);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background:white;
+    color: black;
+}
+.card3 h1{ 
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: left;
+    
+}
+.card3 ul{
+    width: 80%;
+    list-style: none;
+    text-align: left;
+}
+.card4{
+    background: url(https://www.chiropractic-singapore.com.sg/wp-content/uploads/2020/04/Setting-Up-Your-Home-Office-for-Success.jpg) center/ cover;
+    width: 100%;
+    height: 50vh;
+    transition: 0.8s;
+    position: relative;
+}
+
+.card4:hover{
+    background: url('https://www.iphones.ru/wp-content/uploads/2019/04/Run-Windows-on-macOS-with-Cloudalize-1240x630.jpg') center / cover;
+}
+
+.blog .lowcontent{
+    display: flex;
+}
+.lowcontent h1{
+    width: 100%;
+    margin: 0;
+    opacity: 0.8;
+    padding-top: 120px;
+    position: relative;
+    text-align: center;
+}
+.lowcontent h2{
+    margin: 0;
+    opacity: 0.1;
+    width: 100%;
+    font-size: 200px;
+    position: absolute;
+    text-align: center;
+}
+.blog p{
+    width: 100%;
+    height: 15vh;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.lowcenter{
+    width: 100%;
+    padding-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+}
+.lowcard{
+    background: url('https://stevendgoldstein.com/wp-content/uploads/2020/07/Team-Working.jpg') center / cover;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+.lowcard2{
+    background: url('https://resume-example.com/wp-content/uploads/2021/03/teamwork.jpg') center / cover;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+.lowcard3{
+    background: url('https://www.datocms-assets.com/7756/1602283211-untitled-design-2020-10-10t063952-064.png?auto=enhance%2Cformat&h=630&w=1200') center / cover;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+.lowcard4{
+    background: url('https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_lfill,w_300,dpr_3/https://assets.app.engoo.com/images/5glwL5Jj1VoWqUDLfFxoLK.jpeg') center / cover;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+.text h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 20px;
+    color: rgba(0, 0, 0,0.8);
+    font-family: fantasy;
+}
+.text{
+    width: 100%;
+    
+}
+.text_banner{
+    background: url('https://elevationchapter.com/wp-content/uploads/2020/10/Great-Teams-Invest-in-3C%E2%80%99s.jpg') center / cover;
+    width: 80%;
+    height: 500px;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    animation-name: textbanner;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes textbanner {
+    0%{
+        box-shadow: 0 0 20px darkred;
+    }
+    20%{
+        box-shadow: 0 0 20px darkblue;
+    }40%{
+        box-shadow: 0 0 20px orangered;
+    }60%{
+        box-shadow: 0 0 40px lime;
+    }80%{
+        box-shadow: 0 0 20px darkgoldenrod;
+    }100%{
+        box-shadow: 0 0 20px purple;
+    }
+}
+.team{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin: 20px 0;
+}
+.teamcard{
+    background: url('https://blog.vantagecircle.com/content/images/2020/08/Importance-of-team-building.png') center / cover;
+    width: 45%;
+    height: 300px;
+    margin: 0 5px;
+    border-radius: 20px;
+    animation-name: teamcard;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes teamcard {
+    0%{
+        box-shadow: 0 0 20px darkred;
+    }
+    20%{
+        box-shadow: 0 0 20px darkblue;
+    }40%{
+        box-shadow: 0 0 20px orangered;
+    }60%{
+        box-shadow: 0 0 40px lime;
+    }80%{
+        box-shadow: 0 0 20px darkgoldenrod;
+    }100%{
+        box-shadow: 0 0 20px purple;
+    }
+}
+.teamcard2{
+    background: url('https://blog.vantagecircle.com/content/images/2020/08/teamwork-quotes.png') center /cover;
+    width: 45%;
+    height: 300px;
+    margin: 0 5px;
+    border-radius: 20px;
+    animation-name: teamcard2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes teamcard2 {
+    0%{
+        box-shadow: 0 0 20px orange;
+    }
+    20%{
+        box-shadow: 0 0 20px lime;
+    }40%{
+        box-shadow: 0 0 20px red;
+    }60%{
+        box-shadow: 0 0 40px purple;
+    }80%{
+        box-shadow: 0 0 20px yellow;
+    }100%{
+        box-shadow: 0 0 20px mediumblue;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:75px;
+    background: black;
+    padding-top: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+footer a{
+    color: white;
+    font-size: 14px;
+}
+footer p{
+    color: white;
+}
+
